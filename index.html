@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind-Blowing Facts You Won't Believe!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="intro-screen active" id="intro">
+            <h1 class="title">Mind-Blowing Facts You Won't Believe!</h1>
+            <p class="narrator">Ready to have your mind blown? Let's dive into some insane facts!</p>
+            <button class="start-btn" onclick="startFacts()">Start the Journey 🚀</button>
+        </div>
+
+        <div class="fact-screen" id="fact1">
+            <div class="fact-number">Fact #1</div>
+            <div class="fact-content">
+                <div class="emoji">🦥💦</div>
+                <p class="fact-text">Did you know sloths can hold their breath longer than dolphins? They can stay submerged for up to <span class="highlight">40 minutes</span> underwater!</p>
+            </div>
+            <button class="next-btn" onclick="nextFact(2)">Next Fact →</button>
+        </div>
+
+        <div class="fact-screen" id="fact2">
+            <div class="fact-number">Fact #2</div>
+            <div class="fact-content">
+                <div class="emoji">🚗🌕</div>
+                <p class="fact-text">If you could drive a car straight up, it would only take you <span class="highlight">one hour</span> to reach the moon!</p>
+            </div>
+            <button class="next-btn" onclick="nextFact(3)">Next Fact →</button>
+        </div>
+
+        <div class="fact-screen" id="fact3">
+            <div class="fact-number">Fact #3</div>
+            <div class="fact-content">
+                <div class="emoji">🐝</div>
+                <p class="fact-text">Bees can recognize human faces! They have the ability to remember and identify individual faces, just like us!</p>
+            </div>
+            <button class="next-btn" onclick="nextFact(4)">Next Fact →</button>
+        </div>
+
+        <div class="fact-screen" id="fact4">
+            <div class="fact-number">Fact #4</div>
+            <div class="fact-content">
+                <div class="emoji">🦐💥</div>
+                <p class="fact-text">Did you know some shrimp can punch with the speed of a bullet? They create shockwaves that can break glass!</p>
+            </div>
+            <button class="next-btn" onclick="showOutro()">Mind Blown! 💥</button>
+        </div>
+
+        <div class="outro-screen" id="outro">
+            <div class="mind-blown">
+                <h2>Mind Blown? 🤯</h2>
+                <div class="reaction-emojis">🤯 😱 🤩 🧠</div>
+            </div>
+            <p class="outro-text">Which fact blew your mind the most?</p>
+            <div class="fact-voting">
+                <button class="vote-btn" onclick="voteFact(1)">
+                    <span class="vote-emoji">🦥</span>
+                    <span class="vote-label">Sloth</span>
+                    <span class="vote-count" id="vote1">0</span>
+                </button>
+                <button class="vote-btn" onclick="voteFact(2)">
+                    <span class="vote-emoji">🚗</span>
+                    <span class="vote-label">Moon Car</span>
+                    <span class="vote-count" id="vote2">0</span>
+                </button>
+                <button class="vote-btn" onclick="voteFact(3)">
+                    <span class="vote-emoji">🐝</span>
+                    <span class="vote-label">Bee Faces</span>
+                    <span class="vote-count" id="vote3">0</span>
+                </button>
+                <button class="vote-btn" onclick="voteFact(4)">
+                    <span class="vote-emoji">🦐</span>
+                    <span class="vote-label">Shrimp Punch</span>
+                    <span class="vote-count" id="vote4">0</span>
+                </button>
+            </div>
+            <button class="restart-btn" onclick="restart()">🔄 Watch Again</button>
+            <div class="thanks">Thanks for watching!</div>
+        </div>
+    </div>
+
+    <div class="particles" id="particles"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
